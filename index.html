@@ -1,0 +1,1975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app">
+
+        <header class="header">
+            <div class="header__lotification">
+                    <div class="header__lotification-container grid wide">
+                        <h2 class="header__lotification-text">Giảm ngay 10% đơn hàng từ 1 triệu (tiết kiệm ít nhất 100K) | Freeship từ 500K</h2>
+                    </div>
+            </div>
+
+            <div class="header__navbar">
+                <div class="grid wide">
+                    <div class="header__navbar-list">
+                        <div class="navbar-list__item"> 
+                            <span onclick="openNav()" class="nav-menu">
+                                <i class="header__navbar-icon fas fa-bars"></i>
+                            </span>
+                            <span onclick="openNav()" class="nav-search">
+                                <i class="header__navbar-search fas fa-search"></i>
+                            </span>
+                        </div>
+                        
+
+                        <div id="nav__overlay" onclick="closeNav(), CloseNav()" class="nav__overlay"></div>
+                        <!-- nav pc -->
+                        <div id="nav__pc" class="nav__pc">
+                            <div class="nav__search">
+                                <div class="nav__search-wrap">
+                                    <input type="text" name="" id="" class="nav__search-text" placeholder="Bạn muốn tìm sản phẩm gì?">
+                                    <i class="nav__search-icon fas fa-search"></i>
+                    
+                                    <div class="nav__search-history">
+                                        <ul class="nav__search-history-list">
+                                            <li class="nav__search-history-item">
+                                                <a href="">active key off</a>
+                                            </li>
+                                            <li class="nav__search-history-item">
+                                                <a href="">key </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                    
+                            <!-- nav menu -->
+                            <ul class="nav__menu">
+                                <li class="nav__menu-list">
+                                    <a class="nav__menu-list-item nav__menu-list-item-home  border-right__none" href="">TRANG CHỦ</a>
+                                </li>
+                    
+                                <li class="nav__menu-list">
+                                    <a class="nav__menu-list-item" href="">
+                                        <span class="nav__menu-list-item-link">DANH MỤC SẢN PHẨM</span>
+                                    </a>
+                                    <div id="menu_icon-right" class="icon-left">
+                                        <i id="icon-right"  class="nav__menu-list-icon fas fa-chevron-right"></i>
+                                    </div>
+                    
+                                </li>
+                                    <div id="product-list" class="nav__menu-list-product" style="display: none;">
+                                        <li class="nav__menu-list">
+                                            <a class="nav__menu-list-item" href="">
+                                                <span class="nav__menu-list-item-link nav__menu-list-product-link">Đồ Dùng Nhà Bếp</span>
+                                            </a>
+                                        </li>
+        
+                                        <li class="nav__menu-list">
+                                            <a class="nav__menu-list-item" href="">
+                                                <span class="nav__menu-list-item-link nav__menu-list-product-link">Trang Trí Nhà Cửa</span>
+                                            </a>
+                                            
+                                        </li>
+        
+                                        <li class="nav__menu-list">
+                                            <a class="nav__menu-list-item" href="">
+                                                <span class="nav__menu-list-item-link nav__menu-list-product-link">Gia Dụng Đa Năng</span>
+                                            </a>
+                                        </li>
+                                    </div>
+                    
+                                <li class="nav__menu-list">
+                                    <a class="nav__menu-list-item" href="">
+                                        <span class="nav__menu-list-item-link">SỞ THÍCH</span>
+                                        <span class="nav__menu-list-item-label">HOT</span>
+                                    </a>
+                                    <div id="menu_icon-rightLike" >
+                                        <i id="icon-rightLike"  class="nav__menu-list-icon fas fa-chevron-right"></i>
+                                    </div>
+                                </li>
+                                <div id="nav__menu-list-product" class="nav__menu-list-product" style="display: none;">
+                                    <li class="nav__menu-list">
+                                        <a class="nav__menu-list-item border-right__none" href="">
+                                            <span class="nav__menu-list-item-link nav__menu-list-product-link">Ăn kiêng-Eat Clean</span>
+                                        </a>
+                                        
+                                    </li>
+
+                                    <li class="nav__menu-list">
+                                        <a class="nav__menu-list-item border-right__none" href="">
+                                            <span class="nav__menu-list-item-link nav__menu-list-product-link">Deco chụp ảnh</span>
+                                        </a>
+                                        
+                                    </li>
+
+                                    <li class="nav__menu-list">
+                                        <a class="nav__menu-list-item border-right__none" href="">
+                                            <span class="nav__menu-list-item-link nav__menu-list-product-link">Uống trà-cafe</span>
+                                        </a>
+                                        
+                                    </li>
+
+                                    <li class="nav__menu-list">
+                                        <a class="nav__menu-list-item border-right__none" href="">
+                                            <span class="nav__menu-list-item-link nav__menu-list-product-link">Kho cá-hầm gà</span>
+                                        </a>
+                                        
+                                    </li>
+
+                                    <li class="nav__menu-list">
+                                        <a class="nav__menu-list-item border-right__none" href="">
+                                            <span class="nav__menu-list-item-link nav__menu-list-product-link">Trà đào</span>
+                                        </a>
+                                        
+                                    </li>
+                                </div>
+                    
+                                <li class="nav__menu-list">
+                                    <a class="nav__menu-list-item" href="">
+                                        <span class="nav__menu-list-item-link">PHONG CÁCH</span>
+                                        <span class="nav__menu-list-item-label">NEW</span>
+                                    </a>
+                                    <div id="menu_icon-rightStyle" >
+                                        <i id="icon-rightStyle"  class="nav__menu-list-icon fas fa-chevron-right"></i>
+                                    </div>
+                                </li>
+                                <div id="nav__menu-list-productStyle" class="nav__menu-list-product" style="display: none;">
+                                    <li class="nav__menu-list">
+                                        <a class="nav__menu-list-item border-right__none" href="">
+                                            <span class="nav__menu-list-item-link nav__menu-list-product-link">Âu Mỹ</span>
+                                        </a>
+                                        
+                                    </li>
+
+                                    <li class="nav__menu-list">
+                                        <a class="nav__menu-list-item border-right__none" href="">
+                                            <span class="nav__menu-list-item-link nav__menu-list-product-link">Bắc Âu</span>
+                                        </a>
+                                    
+                                    </li>
+
+                                    <li class="nav__menu-list">
+                                        <a class="nav__menu-list-item border-right__none" href="">
+                                            <span class="nav__menu-list-item-link nav__menu-list-product-link">Nhật Bản</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav__menu-list">
+                                        <a class="nav__menu-list-item border-right__none" href="">
+                                            <span class="nav__menu-list-item-link nav__menu-list-product-link">Xanh cổ vịt</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav__menu-list">
+                                        <a class="nav__menu-list-item border-right__none" href="">
+                                            <span class="nav__menu-list-item-link nav__menu-list-product-link">Màu Pastel</span>
+                                        </a>
+                                    </li>
+                                </div>
+                    
+                                <li class="nav__menu-list">
+                                    <a class="nav__menu-list-item border-right__none" href="">
+                                        <span class="nav__menu-list-item-link"> BLOG</span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <!-- nav search -->
+                            <ul class="nav__searches">
+                                <h2 class="nav__search-heding">TÌM KIẾM NHIỀU</h2>
+                                
+                                    <li class="nav__searches-list-item">
+                                        <a class="searches-list__text">Album Bốn Mùa Hoa Lá</a>
+                                    </li>
+                                    <li class="nav__searches-list-item">
+                                        <a class="searches-list__text">Bát Đĩa Sứ Lẻ</a>
+                                    </li>
+                                    <li class="nav__searches-list-item"> 
+                                        <a class="searches-list__text">Bắc Âu</a>
+                                    </li>
+                                    <li class="nav__searches-list-item">
+                                        <a class="searches-list__text">Bộ Bình Nước Ombre</a>
+                                    </li>
+                                    <li class="nav__searches-list-item">
+                                        <a class="searches-list__text">Bộ Sưu Tập Chanh Vàng</a>
+                                    </li>
+                                    <li class="nav__searches-list-item">
+                                        <a class="searches-list__text">Bộ Sưu Tập Gốm Sứ Cherry</a>
+                                    </li>
+                                    <li class="nav__searches-list-item">
+                                        <a class="searches-list__text">Deco Chụp Ảnh</a>
+                                    </li>
+                                    <li class="nav__searches-list-item">
+                                        <a class="searches-list__text">Hoạ Tiết Dâu Tây</a>
+                                    </li>
+                                    <li class="nav__searches-list-item">
+                                        <a class="searches-list__text">Khay Mứt</a>
+                                    </li>
+                                    <li class="nav__searches-list-item">
+                                        <a class="searches-list__text">Kho Cá-Hầm Gà</a>
+                                    </li>
+                                    <li class="nav__searches-list-item">
+                                        <a class="searches-list__text">Màu Pastel</a>
+                                    </li>
+                                    <li class="nav__searches-list-item">
+                                        <a class="searches-list__text">Nhật Bản</a>
+                                    </li><li class="nav__searches-list-item">
+                                        <a class="searches-list__text">Trà Đào</a>
+                                    </li>
+                                    <li class="nav__searches-list-item">
+                                        <a class="searches-list__text">Tô Sứ Ăn Mì</a>
+                                    </li>
+                                    <li class="nav__searches-list-item">
+                                        <a class="searches-list__text">Uống Trà- Cafe</a>
+                                    </li>
+                                    <li class="nav__searches-list-item">
+                                        <a class="searches-list__text">Xanh Cổ Vịt</a>
+                                    </li>
+                                    <li class="nav__searches-list-item">
+                                        <a class="searches-list__text">Âu Mỹ</a>
+                                    </li>
+                                    <li class="nav__searches-list-item">
+                                        <a class="searches-list__text">Ăn Kiêng-Eat Clean</a>
+                                    </li>
+                                
+                            </ul>
+
+                            <!-- footer nav -->
+                            <div class="footer__nav">
+                                <a href="http://online.gov.vn/Home/WebDetails/76517" target="_blank" class="footer__nav-link">
+                                    <img src="https://holame.net/wp-content/uploads/2021/02/logoSaleNoti.png" alt="" class="footer__nav-img">
+                                </a>
+                                    <p class="footer__nav-content">
+                                        Công ty TNHH Seni World. GPDKKD: 0107907231 do Sở Kế Hoạch và Đầu Tư TP Hà Nội cấp ngày 06/07/2017.
+                                    </p>
+
+                                    <p class="footer__nav-content2">
+                                        Holame Store chịu 100% phí ship đổi trả trong trường hợp sản phẩm nhận về sai mẫu, sai màu sắc, kích thước, dung tích …. so với quảng cáo, bill chốt đơn hoặc rơi vỡ, biến dạng do quá trình vận chuyển.
+                                    </p>
+                            </div>
+                        </div> 
+                        
+                        <a href=""  class="header__logo">
+                            <img src="https://holame.r.worldssl.net/wp-content/uploads/2021/04/circle-cropped-2-1.png?v=1619599694" alt="" class="header__logo">
+                        </a>
+
+                        <span id="header__cart" href="#" class="header__cart" onclick="openNavCart()">
+                            <div class="header__cart-icon">
+                            <img src="https://holame.r.worldssl.net/wp-content/uploads/2021/04/shopping-cart.png" alt="" class="cart-icon-img">
+                            </div>
+                            <span class="cart-icon-number">0</span>
+                            <div class="cart-price">
+                                <span class="cart-price-vnd">₫</span>
+                                0
+                            </div>
+                        </span>
+                        <!-- nav cart -->
+                        <div id="header__cart-nav" class="header__cart-nav">
+                            <div class="header__cart-nav-heding">
+                                <h4 class="cart-heding">Giỏ hàng</h4>
+
+                                <div id="icon-close" onclick="CloseNav()" class="header__cart-nav-icon-close">
+                                    <span>
+                                        <i class="icon-close fas fa-times"></i>
+                                        <span class="close-text">Đóng</span>
+                                    </span>
+                                </div>
+                            </div>
+
+                                <div class="noCart-item">
+                                    <img src="data:image/png;base64,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" alt="" class="noCart__img">
+                                </div>
+
+                                <span class="noCart__text">Chưa có sản phẩm trong giỏ hàng.</span>
+                                
+                                <div class="noCart-product__link">
+                                    <a href="" class="noCart-link">
+                                        vào trang sản phẩm
+                                    </a>
+                                </div>
+                            </div>
+                    </div>              
+                </div>
+
+            </div>
+        </header>
+
+        <div class="main">
+            <div class="grid wide">
+                <div class="container-sale l-12">
+                    <div class="container-sale-img display">
+                        <img src="https://holame.r.worldssl.net/wp-content/uploads/2021/05/banner-holame-store-600x600.jpeg" alt="">
+                    </div>
+                    <div class="content-sale display">
+                        <h1 class="content-sale-number">GIẢM 10%</h1>
+                        <div class="content-sale-banner">
+                            <span>SUMMER SALE - XẢ KHO CHÀO HÈ</span>  
+                        </div>
+                        <div class="content-sale-text">
+                            <h4 class="content-sale-text-h4">ĐƠN HÀNG TỪ 1 TRIỆU</h4>
+                        </div>
+                        <div class="content-sale-title">
+                            <p>Mùa Hè này, cùng Holame Store giải phóng gốm sứ, đồ gia dụng với ưu đãi giảm giá lên tới 45% cùng với chính sách giảm thêm 10% nữa đối với đơn hàng từ 1 triệu. Dưới 1 triệu nhập mã W30 giảm ngay 30,000vnđ.</p>
+                        </div>
+
+                        <div class="content-sale-menu">
+                            <ul class="content-sale-list">
+                                <li class="content-sale-list-item">
+                                    <i class="list-item__icon fas fa-arrow-right"></i>
+                                    <span class="list-item__content">
+                                        <strong>Miễn phí vận chuyển </strong> đơn hàng từ 500K
+                                    </span>
+                                </li>
+
+                                <li class="content-sale-list-item">
+                                    <i class="list-item__icon fas fa-arrow-right"></i>
+                                    <span class="list-item__content">
+                                        <strong>Miễn phí đổi trả </strong> hàng sai mẫu, hỏng vỡ do quá trình vận chuyển
+                                    </span>
+                                </li>
+
+                                <li class="content-sale-list-item">
+                                    <i class="list-item__icon fas fa-arrow-right"></i>
+                                    <span class="list-item__content">
+                                        <strong>Thanh toán linh hoạt: </strong> COD, Internet Banking, Momo, Visa/Master
+                                    </span>
+                                </li>
+
+                                <li class="content-sale-list-item">
+                                    <i class="list-item__icon fas fa-arrow-right"></i>
+                                    <span class="list-item__content">
+                                        <strong>Có sẵn hàng, </strong> ship nhanh nội thành HN. Các tỉnh từ 2 - 4 ngày
+                                    </span>
+                                </li>
+
+                                <li class="content-sale-list-item">
+                                    <i class="list-item__icon fas fa-arrow-right"></i>
+                                    <span class="list-item__content">
+                                        Gói hàng cẩn thận với<strong> 2 - 3 lớp chống sốc </strong>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="container-sale_img">
+                        <div class="container-sale_img-item">
+                            <img src="https://holame.net/wp-content/uploads/2021/07/Ba%CC%89n-sao-cu%CC%89a-Ba%CC%89n-sao-cu%CC%89a-Kho%CC%82ng-co%CC%81-tie%CC%82u-de%CC%82%CC%80-1200x500.png" style="width: 100%;" alt="">
+                        </div>
+                        <div class="container-sale_img-moblie l-0">
+                            <img src="https://holame.net/wp-content/uploads/2021/07/700x1080-banner.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="competitive-advantage-container">
+                    <div class="competitive-advantage l-4">
+                        <div class="competitive-advantage-item">
+                            <div class="competitive-advantage__col-img">
+                                <img src="https://holame.net/wp-content/uploads/2021/03/giao-hang-50x50.png" alt="" class="competitive-advantage__img">
+                            </div>
+                            <div class="competitive-advantage__content">
+                                <h5 class="competitive-advantage__heding">PHÍ SHIP RẺ NHẤT</h5>
+                                <span class="competitive-advantage__content">Đồng giá 30K ship toàn quốc. Freeship từ 500K.</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+        
+                    <div class="competitive-advantage l-4">
+                        <div class="competitive-advantage-item">
+                            <div class="competitive-advantage__col-img">
+                                <img src="https://holame.r.worldssl.net/wp-content/uploads/2021/03/doi-tra-50x50.png">
+                            </div>
+                            <div class="competitive-advantage__content">
+                                <h5 class="competitive-advantage__heding">MIỄN PHÍ ĐỔI TRẢ</h5>
+                                <span class="competitive-advantage__content">Miễn phí đổi trả hàng lỗi, sai mẫu, vỡ hỏng khi vận chuyển.</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+        
+                    <div class="competitive-advantage l-4">
+                        <div class="competitive-advantage-item">
+                            <div class="competitive-advantage__col-img">
+                                <img src="https://holame.r.worldssl.net/wp-content/uploads/2021/03/ho-tro-50x50.png" alt="" class="competitive-advantage__img">
+                            </div>
+                            <div class="competitive-advantage__content">
+                                <h5 class="competitive-advantage__heding">HÀNG CÓ SẴN</h5>
+                                <span class="competitive-advantage__content">Ship ngay từ 1 – 4 ngày, không phải chờ đợi.</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="menu-product">
+                <div class="grid wide">
+                    <div class="menu-product__header">
+                        <span class="menu-product__item">ƯU ĐÃI XẢ KHO</span>
+
+                        <h2 class="menu-product__heding">DANH MỤC SẢN PHẨM</h2>
+
+                        <span class="menu-product__introduce">+300 sản phẩm với ưu đãi vô cùng hấp dẫn đang chờ bạn khám phá!</span>
+                    </div>
+
+                    <div class="menu-product-img">
+                        <img src="https://holame.net/wp-content/uploads/2021/01/iLOjOks.jpg" alt="" class="menu-product-img-item">
+
+                        <img src="https://holame.r.worldssl.net/wp-content/uploads/2021/01/7SfqSpK.jpg" alt="" class="menu-product-img-item">
+
+                        <img src="https://holame.net/wp-content/uploads/2021/01/iLOjOks.jpg" alt="" class="menu-product-img-item">
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- best seller -->
+            <div class="best-seller hidden-mobile">
+                <div class="grid wide">
+                    <div class="best-seller__header">
+                        <h2 class="best-seller__heding">BEST-SELLERS</h2>
+                    </div>
+
+                    <div class="best-seller__product">
+                        <div class="grid wide">
+                            <div class="row ">                   
+                                <div class="bestsell__product-container">
+                                    <div class="bestsell__product-container-list" style="transform: translate3d(0px, 0px, 0px);">
+                                        <div class="best-seller__product-item">
+                                            <div class="seller__product-item col l-2-4 m-3 c-4">
+                                                <a href="" class="best-seller__product-link" >
+                                                    <div class="best-seller__product-img">
+                                                        <img src="https://holame.r.worldssl.net/wp-content/uploads/2020/12/bat-dia-le-chanh-vang-la-xanh-16-600x600.jpg?v=1619175028" alt="">
+                                                        
+                                                        <div class="best-seller__product-cart">
+                                                            <img src="data:image/png;base64,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" alt="" class="product-cart__img">
+                                                        </div>
+                                                    </div>
+                        
+                                                    <span class="sale__item">-39%</span>
+                        
+                                                    <div class="best-seller__item">
+                                                        <span class="sale__content">Bộ sưu tập bát đĩa sứ lẻ Chanh vàng lá xanh</span>
+                                                        
+                                                        <div class="best-sller__evaluate">
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                        </div>
+                        
+                                                        <span class="best-sller__much">
+                                                            <span class="cart-price-vnd">₫</span>45,000 - 
+                                                            <span class="cart-price-vnd">₫</span>245,000
+                                                        </span>
+                                                        
+                                                    </div>
+                                                    
+                                                    
+                                                
+                                                </a>
+                                            </div>
+                                            <div class="seller__product-item col l-2-4 m-3 c-4">
+                                                <a href="" class="best-seller__product-link" >
+                                                    <div class="best-seller__product-img">
+                                                        <img src="https://holame.r.worldssl.net/wp-content/uploads/2020/11/bo-suu-tap-bat-dia-khay-su-cherry-do-12-600x600.jpg?v=1619176043" alt="">
+                                                    
+                                                        <div class="best-seller__product-cart">
+                                                            <img src="data:image/png;base64,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" alt="" class="product-cart__img">
+                                                        </div>
+                                                    </div>
+                        
+                                                    <span class="sale__item">-39%</span>
+                        
+                                                    <div class="best-seller__item">
+                                                        <span class="sale__content">Bộ sưu tập bát đĩa khay sứ Cherry đỏ</span>
+                                                        
+                                                        <div class="best-sller__evaluate">
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                            
+                                                        </div>
+                        
+                                                        <span class="best-sller__much">
+                                                            <span class="cart-price-vnd">₫</span>75,000 - 
+                                                            <span class="cart-price-vnd">₫</span>175,000
+                                                        </span>
+                                                        
+                                                    </div>
+                                                    
+                                                </a>
+                                            </div>
+                                            <div class="seller__product-item col l-2-4 m-3 c-4">
+                                                <a href="" class="best-seller__product-link" >
+                                                    <div class="best-seller__product-img">
+                                                        <img src="https://holame.r.worldssl.net/wp-content/uploads/2021/06/bst-dua-vien-nau-20-600x600.jpg?v=1623055918" alt="">
+                                                    
+                                                        <div class="best-seller__product-cart">
+                                                            <img src="data:image/png;base64,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" alt="" class="product-cart__img">
+                                                        </div>
+                                                    </div>
+                        
+                                                    <div class="best-seller__item-like">
+                                                        <span class="sale__item">-39%</span>
+                                                    </div>
+                        
+                                                    <div class="best-seller__item">
+                                                        <span class="sale__content">Bộ sưu tập bát đĩa sứ lẻ dứa viền nâu</span>
+                                                        
+                                                        <div class="best-sller__evaluate">
+                                                            <!-- <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i> -->
+                                                        </div>
+                        
+                                                        <span class="best-sller__much">
+                                                            <span class="cart-price-vnd">₫</span>15,000 - 
+                                                            <span class="cart-price-vnd">₫</span>135,000
+                                                        </span>
+                                                        
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="seller__product-item col l-2-4 m-3 c-4">
+                                                <a href="" class="best-seller__product-link" >
+                                                    <div class="best-seller__product-img">
+                                                        <img src="https://holame.r.worldssl.net/wp-content/uploads/2020/12/bat-dia-coc-su-le-chanh-vang-22-600x600.jpg?v=1619174767" alt="">
+                                                    
+                                                        <div class="best-seller__product-cart">
+                                                            <img src="data:image/png;base64,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" alt="" class="product-cart__img">
+                                                        </div>
+                                                    </div>
+                        
+                                                    <div class="best-seller__item-like">
+                                                        <span class="sale__item">-39%</span>
+                                                    </div>
+                        
+                                                    <div class="best-seller__item">
+                                                        <span class="sale__content">Bộ sưu tập bát đĩa cốc sứ lẻ chanh vàng</span>
+                                                        
+                                                        <div class="best-sller__evaluate">
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                        </div>
+                        
+                                                        <span class="best-sller__much">
+                                                            <span class="cart-price-vnd">₫</span>18,000 - 
+                                                            <span class="cart-price-vnd">₫</span>295,000
+                                                        </span>
+                                                        
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class=" seller__product-item col l-2-4 m-3 c-4 hidden_tablet">
+                                                <a href="" class="best-seller__product-link" >
+                                                    <div class="best-seller__product-img">
+                                                        <img src="https://holame.r.worldssl.net/wp-content/uploads/2021/02/dia-su-ghep-hinh-hoa-tiet-trai-dua-5-600x600.jpg?v=1619173842" alt="">
+                                                    
+                                                        <div class="best-seller__product-cart">
+                                                            <img src="data:image/png;base64,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" alt="" class="product-cart__img">
+                                                        </div>
+                                                    </div>
+                        
+                                                    <div class="best-seller__item-like">
+                                                        <span class="sale__item">-39%</span>
+                                                    </div>
+                        
+                                                    <div class="best-seller__item">
+                                                        <span class="sale__content">Bộ bát đĩa sứ lẻ họa tiết củ cải đỏ</span>
+                                                        
+                                                        <div class="best-sller__evaluate">
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                        </div>
+                        
+                                                        <span class="best-sller__much">
+                                                            <span class="cart-price-vnd">₫</span>18,000 - 
+                                                            <span class="cart-price-vnd">₫</span>225,000
+                                                        </span>
+                                                        
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>    
+                                        <div class="best-seller__product-item2">
+                                            <div class="seller__product-item col l-2-4 m-3 c-4">
+                                                <a href="" class="best-seller__product-link" >
+                                                    <div class="best-seller__product-img">
+                                                        <img src="https://holame.r.worldssl.net/wp-content/uploads/2020/12/bat-dia-coc-su-le-chanh-vang-22-600x600.jpg?v=1619174767" alt="">
+                                                    
+                                                        <div class="best-seller__product-cart">
+                                                            <img src="data:image/png;base64,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" alt="" class="product-cart__img">
+                                                        </div>
+                                                    </div>
+                        
+                                                    <div class="best-seller__item-like">
+                                                        <span class="sale__item">-39%</span>
+                                                    </div>
+                        
+                                                    <div class="best-seller__item">
+                                                        <span class="sale__content">Bộ sưu tập bát đĩa cốc sứ lẻ chanh vàng</span>
+                                                        
+                                                        <div class="best-sller__evaluate">
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                        </div>
+                        
+                                                        <span class="best-sller__much">
+                                                            <span class="cart-price-vnd">₫</span>18,000 - 
+                                                            <span class="cart-price-vnd">₫</span>295,000
+                                                        </span>
+                                                        
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="seller__product-item col l-2-4 m-3 c-4 ">
+                                                <a href="" class="best-seller__product-link" >
+                                                    <div class="best-seller__product-img">
+                                                        <img src="https://holame.r.worldssl.net/wp-content/uploads/2020/12/bat-dia-le-chanh-vang-la-xanh-16-600x600.jpg?v=1619175028" alt="">
+                                                        
+                                                        <div class="best-seller__product-cart">
+                                                            <img src="data:image/png;base64,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" alt="" class="product-cart__img">
+                                                        </div>
+                                                    </div>
+                        
+                                                    <span class="sale__item">-39%</span>
+                        
+                                                    <div class="best-seller__item">
+                                                        <span class="sale__content">Bộ sưu tập bát đĩa sứ lẻ Chanh vàng lá xanh</span>
+                                                        
+                                                        <div class="best-sller__evaluate">
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                        </div>
+                        
+                                                        <span class="best-sller__much">
+                                                            <span class="cart-price-vnd">₫</span>45,000 - 
+                                                            <span class="cart-price-vnd">₫</span>245,000
+                                                        </span>
+                                                        
+                                                    </div>
+                                                    
+                                                    
+                                                
+                                                </a>
+                                            </div>
+                                            <div class="seller__product-item col l-2-4 m-3 c-4">
+                                                <a href="" class="best-seller__product-link" >
+                                                    <div class="best-seller__product-img">
+                                                        <img src="https://holame.r.worldssl.net/wp-content/uploads/2021/06/bst-dua-vien-nau-20-600x600.jpg?v=1623055918" alt="">
+                                                    
+                                                        <div class="best-seller__product-cart">
+                                                            <img src="data:image/png;base64,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" alt="" class="product-cart__img">
+                                                        </div>
+                                                    </div>
+                        
+                                                    <div class="best-seller__item-like">
+                                                        <span class="sale__item">-39%</span>
+                                                    </div>
+                        
+                                                    <div class="best-seller__item">
+                                                        <span class="sale__content">Bộ sưu tập bát đĩa sứ lẻ dứa viền nâu</span>
+                                                        
+                                                        <div class="best-sller__evaluate">
+                                                            <!-- <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i> -->
+                                                        </div>
+                        
+                                                        <span class="best-sller__much">
+                                                            <span class="cart-price-vnd">₫</span>15,000 - 
+                                                            <span class="cart-price-vnd">₫</span>135,000
+                                                        </span>
+                                                        
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="seller__product-item col l-2-4 m-3 c-4">
+                                                <a href="" class="best-seller__product-link" >
+                                                    <div class="best-seller__product-img">
+                                                        <img src="https://holame.r.worldssl.net/wp-content/uploads/2020/11/bo-suu-tap-bat-dia-khay-su-cherry-do-12-600x600.jpg?v=1619176043" alt="">
+                                                    
+                                                        <div class="best-seller__product-cart">
+                                                            <img src="data:image/png;base64,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" alt="" class="product-cart__img">
+                                                        </div>
+                                                    </div>
+                        
+                                                    <span class="sale__item">-39%</span>
+                        
+                                                    <div class="best-seller__item">
+                                                        <span class="sale__content">Bộ sưu tập bát đĩa khay sứ Cherry đỏ</span>
+                                                        
+                                                        <div class="best-sller__evaluate">
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                            
+                                                        </div>
+                        
+                                                        <span class="best-sller__much">
+                                                            <span class="cart-price-vnd">₫</span>75,000 - 
+                                                            <span class="cart-price-vnd">₫</span>175,000
+                                                        </span>
+                                                        
+                                                    </div>
+                                                    
+                                                </a>
+                                            </div>
+                                            <div class="seller__product-item col l-2-4 m-3 c-4">
+                                                <a href="" class="best-seller__product-link" >
+                                                    <div class="best-seller__product-img">
+                                                        <img src="https://holame.r.worldssl.net/wp-content/uploads/2021/02/dia-su-ghep-hinh-hoa-tiet-trai-dua-5-600x600.jpg?v=1619173842" alt="">
+                                                    
+                                                        <div class="best-seller__product-cart">
+                                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEX///8AAAC9vb3u7u5xcXFRUVFtbW1JSUl9fX0xMTH7+/vPz8+kpKT39/e3t7dkZGTp6enDw8OWlpbg4ODV1dVcXFwaGhrc3Nyvr68QEBA6Ojp/f3+JiYmdnZ01NTXHx8ciIiJBQUGHh4cLCwtNTU1gYGAqKioYGBiQkJBcQVxfAAAFsklEQVR4nO2da3eqSgyGxVsVL6iVatVatdXd//8LzyYBt0DtATpvMsuV51O/NCTIzCTvZKDVMgzDMAzDMAzDMAzDMAzDMAzDMAzDMAzDMCQYbQffsn3X9swR0+AuY23f3HC4H+GLtm9uuB9gEMy0nXPC4ocI29rOuWG8GX4DRfil7RuSXhLhp7YXSHZJhK8TbTeAtOkxfdZ2A8iMIlxru4HkNYlwq+0FkiiJcK/tBRJeJzvabgB5pwiX2m4AmTxS8v09L0mEfW0vkHRpzdf2AsmYHtNp2xvmrjOs5U91lQ6OU6xQO54yT24jbA21AyrjOMKTdjwlYscR/qBRKbFwHOEzWV1POh7AGZZzfZOsnlxbbcSafHGujD0lVnuurTaC0o8/zs1+0Y1zbrYJpOq6TyHnFOHKud36oMoAf5QMWCl3Sex23dutzRtFCCjH48Tu0b3d2sAkFb51HoimVKsOAIZHFOEIYLkeHdiE0AFNYXUBytObxHKEsFwL2mL4gIwWSiWGCMu1AG4TrVGzdC0mH4kXO4htVjLmENvV4SIHs10bQsqyuoAKC+bTh/JikDiBapvYIo1XhWb0M8j4FLcSVaYDHSo8yKcg69VYYhSMjAA3UVdljM2OqbzYoKxXop+4cICZZyUjhNmvwAFbpb6rKxkzcPqPK1yqMkIpGBkBqvisygKt+EXaa36Mrm/UlQy6PrKxR1vJwOccPNW8Aa/wM238ZA4S1KuyQ080ae2it3tB20Out7fzKCsZdHVss/JKVclYARWMjInAXbzPFKlgZByTa7huEqgKVMHIEJjN7rORuL2aSkYoshrPFJUMmYwqfEFnhvcZyyxVPfyiew+hbvOFXnkxlEkZ9XoypBQGPSVjjlYwMoZYtes+YuND7XSJ2BwnNGeXCA9SMpiWkiGXa8jkTmUE80WR/LeMYM5PNYz79s7/Q7Bug+6k30Wy9tZRMkSvqqJkiGpgAppeGVEdU0XJENWiBbT1ErL7CRo9GcKZVCCvZAjv68Xy5QX1YMjtzcL3mssEUoUFA+8XKCHdgo3u+Sgj3ucC7tspI96rROP+Inc9+X4zcP9cGbqeZM8guAeyhHyOId2TofCSI2gvchnuvxZtiqRa5iB2OYUeelklQ+McBPJcRxmNsywT0elbpYtH9DV8KmfKgGfkyqicC5wLTjUqb6ka8btO9p9PAhxlFYyEN2rIEEYwC56pvI1H8Jz8SiM+yWq0oxOgYNr9lF7xsy/JQC7AdvrMaB94xsE/ofZhYCCssml10ErAqYz+yzFw8PaBthdISM//0PYCyeP/ho8/Dnku1X6vApSHXw/TxzToP25Ow9LlX/ZdSQaCG2tatYVgiA9fH/6dT/ePHmGrNVbQaaRfeT9adHuSRI+cZBiGYTDLRRSfB9PfCe9he3uOoy8fZ8325bos/yIh312XPv03iBaIbxfmphvfuc9L7L2qXMLCPk2zH2BUyGB8+hRhr5heNemUmhWNXFRfKJZjnbq0ieI//NdrA+eyzZBedEz/8ucDYezPManeQu7na9AMxt2jwSmZi2eRX88pb9Rkp0t4NNX/pNA5N4Kp88IbKaibv9/Uf1Z7q487Ef4JeDyfunLxl9AA+rdRw61SdZuXiv/l0WcY0pft3wy8RgvGqDDwWM/zZE285IcMt9jVPaxfjLDtU4SFtshmvcPFM8wnn55SPjN3Vfr6jSb6kD6ReW0nmeTmZ23ecxkIH7eu38PPNybrdIwbDWYY/CXvj2QinPFa0eCdGWnafU6WmVGqVXrwmQkm3ccIgmGmMDY5hpHmMcHrNY33ZcFvZWv+DU3k90nRiC+jkIjzvjXrVX7OG9l784wStx+de2kqTc82N1Yif2onZnn9GX9zxmSdDeSN3Fmc6nTaX9vT22+3Flbj02A39aVsMgzDMAzDMAzDMAzDMAzDMAzDMAzDMAzDMIj/AJ4rQpnCPv5rAAAAAElFTkSuQmCC" alt="" class="product-cart__img">
+                                                        </div>
+                                                    </div>
+                        
+                                                    <div class="best-seller__item-like">
+                                                        <span class="sale__item">-39%</span>
+                                                    </div>
+                        
+                                                    <div class="best-seller__item">
+                                                        <span class="sale__content">Bộ bát đĩa sứ lẻ họa tiết củ cải đỏ</span>
+                                                        
+                                                        <div class="best-sller__evaluate">
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                            <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                        </div>
+                        
+                                                        <span class="best-sller__much">
+                                                            <span class="cart-price-vnd">₫</span>18,000 - 
+                                                            <span class="cart-price-vnd">₫</span>225,000
+                                                        </span>
+                                                        
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+
+
+                                <div class="best-seller__arrow">
+                                    <div class="best-seller__arrow-left">
+                                    <i class="best-seller__arrow-left-icon fas fa-chevron-left"></i>
+                                    </div>
+    
+                                        <div class="best-seller__arrow-right">
+                                        <i class="best-seller__arrow-right-icon fas fa-chevron-right"></i>
+                                        </div>
+                                </div>
+    
+    
+                                <div class="owl-dots bestsell-dot">
+                                    <div class="owl-dots bestsell-dot_left">
+                                        <span id="" class="bestsell-active"></span>
+                                    </div>
+                                    <div class="owl-dots bestsell-dot_right">
+                                        <span id=""></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product-sale -->
+
+            <div class="Product-sale">
+                <div class="grid wide">
+                    <div class="Product-sale__header">
+                        <span class="menu-product__item Product-sale__text">Summer Sale</span>
+
+                        <h2 class="menu-product__heding Product-sale__heding">SẢN PHẨM ĐANG SALE</h2>
+
+                    </div>
+
+                    <div class="row best-seller__product  Product-sale__item">
+
+                        <div class="product-item col l-2-4 m-4 c-6">
+                            <a href="" class="best-seller__product-link" >
+                                <div class="best-seller__product-img">
+                                    <img src="https://holame.r.worldssl.net/wp-content/uploads/2021/06/set-4-coc-dong-b6.303-4-600x600.jpg?v=1624695386" alt="">
+                                    
+                                    <div class="best-seller__product-cart">
+                                        <img src="data:image/png;base64,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" alt="" class="product-cart__img">
+                                    </div>
+                                </div>
+
+                                <span class="sale__item">-25%</span>
+
+                                <div class="best-seller__item">
+                                    <span class="sale__content">Set 4 cốc đong 4 dung tích có tay cầm</span>
+                                    
+                                    <div class="best-sller__evaluate">
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                    </div>
+
+                                    <span class="best-sller__much">
+                                        <span class="cart-price-vnd delete-price">₫45,000</span> - 
+                                        <span class="cart-price-vnd">₫245,000</span>
+                                    </span>
+                                    
+                                </div>
+                                
+                                
+                            
+                            </a>
+                        </div>
+
+                        <div class="product-item col l-2-4 m-4 c-6">
+                            <a href="" class="best-seller__product-link" >
+                                <div class="best-seller__product-img">
+                                    <img src="https://holame.r.worldssl.net/wp-content/uploads/2021/06/to-su-co-nap-b6305-b6312-2-600x600.jpg?v=1624648001" alt="">
+                                
+                                    <div class="best-seller__product-cart">
+                                        <img src="data:image/png;base64,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" alt="" class="product-cart__img">
+                                    </div>
+                                </div>
+
+                                <span class="sale__item">-41%</span>
+
+                                <div class="best-seller__item">
+                                    <span class="sale__content">Tô sứ có nắp đậy và quai hoa lá 1000 – 1500ml</span>
+                                    
+                                    <div class="best-sller__evaluate">
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <!-- <i class="best-seller-item__star-gold fas fa-star"></i> -->
+                                        
+                                    </div>
+
+                                    <span class="best-sller__much">
+                                        <span class="cart-price-vnd">₫75,000</span> - 
+                                        <span class="cart-price-vnd">₫175,000</span>
+                                    </span>
+                                    
+                                </div>
+                                
+                            </a>
+                        </div>
+
+                        <div class="product-item col l-2-4 m-4 c-6">
+                            <a href="" class="best-seller__product-link" >
+                                <div class="best-seller__product-img">
+                                    <img src="https://holame.r.worldssl.net/wp-content/uploads/2021/06/bat-dia-su-ca-xanh-3-600x600.jpg?v=1624645281" alt="">
+                                
+                                    <div class="best-seller__product-cart">
+                                        <img src="data:image/png;base64,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" alt="" class="product-cart__img">
+                                    </div>
+                                </div>
+
+                                <div class="best-seller__item-like">
+                                    <span class="sale__item">-39%</span>
+                                </div>
+
+                                <div class="best-seller__item">
+                                    <span class="sale__content">Bát đĩa sứ lẻ cá xanh</span>
+                                    
+                                    <div class="best-sller__evaluate">
+                                        <!-- <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i> -->
+                                    </div>
+
+                                    <span class="best-sller__much">
+                                        <span class="cart-price-vnd">₫</span>15,000 - 
+                                        <span class="cart-price-vnd">₫</span>135,000
+                                    </span>
+                                    
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="product-item col l-2-4 m-4 c-6">
+                            <a href="" class="best-seller__product-link" >
+                                <div class="best-seller__product-img">
+                                    <img src="https://holame.r.worldssl.net/wp-content/uploads/2021/06/bo-bat-dia-su-b6368-b6372-5-600x600.jpg?v=1624540226" alt="">
+                                
+                                    <div class="best-seller__product-cart">
+                                        <img src="data:image/png;base64,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" alt="" class="product-cart__img">
+                                    </div>
+                                </div>
+
+                                <div class="best-seller__item-like">
+                                    <span class="sale__item">-50%</span>
+                                </div>
+
+                                <div class="best-seller__item">
+                                    <span class="sale__content">Bộ bát đĩa sứ lẻ dâu tây lá xanh</span>
+                                    
+                                    <div class="best-sller__evaluate">
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                    </div>
+
+                                    <span class="best-sller__much">
+                                        <span class="cart-price-vnd">₫</span>18,000 - 
+                                        <span class="cart-price-vnd">₫</span>295,000
+                                    </span>
+                                    
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="product-item col l-2-4 m-4 c-6">
+                            <a href="" class="best-seller__product-link" >
+                                <div class="best-seller__product-img">
+                                    <img src="https://holame.r.worldssl.net/wp-content/uploads/2021/06/dia-su-cute-animals-5-600x600.jpg?v=1624523695" alt="">
+                                
+                                    <div class="best-seller__product-cart">
+                                        <img src="data:image/png;base64,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" alt="" class="product-cart__img">
+                                    </div>
+                                </div>
+
+                                <div class="best-seller__item-like">
+                                    <span class="sale__item">-29%</span>
+                                </div>
+
+                                <div class="best-seller__item">
+                                    <span class="sale__content">Đĩa sứ 8 inch Cute Animals</span>
+                                    
+                                    <div class="best-sller__evaluate">
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                    </div>
+
+                                    <span class="best-sller__much">
+                                        <span class="cart-price-vnd">₫</span>18,000 - 
+                                        <span class="cart-price-vnd">₫</span>225,000
+                                    </span>
+                                    
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="product-item col l-2-4 m-4 c-6">
+                            <a href="" class="best-seller__product-link" >
+                                <div class="best-seller__product-img">
+                                    <img src="https://holame.r.worldssl.net/wp-content/uploads/2021/06/bat-dia-tho-vang-2-600x600.jpg?v=1624521790" alt="">
+                                    
+                                    <div class="best-seller__product-cart">
+                                        <img src="data:image/png;base64,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" alt="" class="product-cart__img">
+                                    </div>
+                                </div>
+
+                                <span class="sale__item">-30%</span>
+
+                                <div class="best-seller__item">
+                                    <span class="sale__content">Bộ sưu tập bát đĩa sứ lẻ Chanh vàng lá xanh</span>
+                                    
+                                    <div class="best-sller__evaluate">
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                    </div>
+
+                                    <span class="best-sller__much">
+                                        <span class="cart-price-vnd">₫</span>45,000 - 
+                                        <span class="cart-price-vnd">₫</span>245,000
+                                    </span>
+                                    
+                                </div>
+                                
+                                
+                            
+                            </a>
+                        </div>
+
+                        <div class="product-item col l-2-4 m-4 c-6">
+                            <a href="" class="best-seller__product-link" >
+                                <div class="best-seller__product-img">
+                                    <img src="https://holame.r.worldssl.net/wp-content/uploads/2020/11/bo-suu-tap-bat-dia-khay-su-cherry-do-12-600x600.jpg?v=1619176043" alt="">
+                                
+                                    <div class="best-seller__product-cart">
+                                        <img src="data:image/png;base64,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" alt="" class="product-cart__img">
+                                    </div>
+                                </div>
+
+                                <span class="sale__item">-39%</span>
+
+                                <div class="best-seller__item">
+                                    <span class="sale__content">Bộ sưu tập bát đĩa khay sứ Cherry đỏ</span>
+                                    
+                                    <div class="best-sller__evaluate">
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        
+                                    </div>
+
+                                    <span class="best-sller__much">
+                                        <span class="cart-price-vnd">₫</span>75,000 - 
+                                        <span class="cart-price-vnd">₫</span>175,000
+                                    </span>
+                                    
+                                </div>
+                                
+                            </a>
+                        </div>
+
+                        <div class="product-item col l-2-4 m-4 c-6">
+                            <a href="" class="best-seller__product-link" >
+                                <div class="best-seller__product-img">
+                                    <img src="https://holame.r.worldssl.net/wp-content/uploads/2021/06/dia-su-nuong-b6409-b6414-2-600x600.jpg?v=1624438597" alt="">
+                                
+                                    <div class="best-seller__product-cart">
+                                        <img src="data:image/png;base64,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" alt="" class="product-cart__img">
+                                    </div>
+                                </div>
+
+                                <div class="best-seller__item-like">
+                                    <span class="sale__item">-25%</span>
+                                </div>
+
+                                <div class="best-seller__item">
+                                    <span class="sale__content">Đĩa sứ nướng có tay cầm Fresh Fruits</span>
+                                    
+                                    <div class="best-sller__evaluate">
+                                        <!-- <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i> -->
+                                    </div>
+
+                                    <span class="best-sller__much">
+                                        <span class="cart-price-vnd">₫</span>15,000 - 
+                                        <span class="cart-price-vnd">₫</span>135,000
+                                    </span>
+                                    
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="product-item col l-2-4 m-4 c-6">
+                            <a href="" class="best-seller__product-link" >
+                                <div class="best-seller__product-img">
+                                    <img src="https://holame.r.worldssl.net/wp-content/uploads/2021/06/to-su-b6386-b6402-1-600x600.jpg?v=1624441344" alt="">
+                                
+                                    <div class="best-seller__product-cart">
+                                        <img src="data:image/png;base64,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" alt="" class="product-cart__img">
+                                    </div>
+                                </div>
+
+                                <div class="best-seller__item-like">
+                                    <span class="sale__item">-39%</span>
+                                </div>
+
+                                <div class="best-seller__item">
+                                    <span class="sale__content">Tô sứ tròn Fresh Fruits nhiều size</span>
+                                    
+                                    <div class="best-sller__evaluate">
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                    </div>
+
+                                    <span class="best-sller__much">
+                                        <span class="cart-price-vnd">₫</span>18,000 - 
+                                        <span class="cart-price-vnd">₫</span>295,000
+                                    </span>
+                                    
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="product-item col l-2-4 m-4 c-6">
+                            <a href="" class="best-seller__product-link" >
+                                <div class="best-seller__product-img">
+                                    <img src="https://holame.r.worldssl.net/wp-content/uploads/2020/12/bat-dia-le-chanh-vang-la-xanh-16-600x600.jpg?v=1619175028" alt="">
+                                
+                                    <div class="best-seller__product-cart">
+                                        <img src="data:image/png;base64,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" alt="" class="product-cart__img">
+                                    </div>
+                                </div>
+
+                                <div class="best-seller__item-like">
+                                    <span class="sale__item">-39%</span>
+                                </div>
+
+                                <div class="best-seller__item">
+                                    <span class="sale__content">Bộ sưu tập bát đĩa sứ lẻ Chanh vàng lá xanh</span>
+                                    
+                                    <div class="best-sller__evaluate">
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                    </div>
+
+                                    <span class="best-sller__much">
+                                        <span class="cart-price-vnd">₫</span>18,000 - 
+                                        <span class="cart-price-vnd">₫</span>225,000
+                                    </span>
+                                    
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="product-item col l-2-4 m-4 c-6">
+                            <a href="" class="best-seller__product-link" >
+                                <div class="best-seller__product-img">
+                                    <img src="https://holame.r.worldssl.net/wp-content/uploads/2020/12/bat-dia-le-chanh-vang-la-xanh-16-600x600.jpg?v=1619175028" alt="">
+                                    
+                                    <div class="best-seller__product-cart">
+                                        <img src="data:image/png;base64,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" alt="" class="product-cart__img">
+                                    </div>
+                                </div>
+
+                                <span class="sale__item">-41%</span>
+
+                                <div class="best-seller__item">
+                                    <span class="sale__content">Bộ sưu tập bát đĩa sứ lẻ Chanh vàng lá xanh</span>
+                                    
+                                    <div class="best-sller__evaluate">
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                    </div>
+
+                                    <span class="best-sller__much">
+                                        <span class="cart-price-vnd">₫</span>45,000 - 
+                                        <span class="cart-price-vnd">₫</span>245,000
+                                    </span>
+                                    
+                                </div>
+                                
+                                
+                            
+                            </a>
+                        </div>
+
+                        <div class="product-item col l-2-4 m-4 c-6">
+                            <a href="" class="best-seller__product-link" >
+                                <div class="best-seller__product-img">
+                                    <img src="https://holame.r.worldssl.net/wp-content/uploads/2021/06/bat-an-com-b510-b515-1-600x600.jpg?v=1622915921" alt="">
+                                
+                                    <div class="best-seller__product-cart">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEX///8AAAC9vb3u7u5xcXFRUVFtbW1JSUl9fX0xMTH7+/vPz8+kpKT39/e3t7dkZGTp6enDw8OWlpbg4ODV1dVcXFwaGhrc3Nyvr68QEBA6Ojp/f3+JiYmdnZ01NTXHx8ciIiJBQUGHh4cLCwtNTU1gYGAqKioYGBiQkJBcQVxfAAAFsklEQVR4nO2da3eqSgyGxVsVL6iVatVatdXd//8LzyYBt0DtATpvMsuV51O/NCTIzCTvZKDVMgzDMAzDMAzDMAzDMAzDMAzDMAzDMAzDMCQYbQffsn3X9swR0+AuY23f3HC4H+GLtm9uuB9gEMy0nXPC4ocI29rOuWG8GX4DRfil7RuSXhLhp7YXSHZJhK8TbTeAtOkxfdZ2A8iMIlxru4HkNYlwq+0FkiiJcK/tBRJeJzvabgB5pwiX2m4AmTxS8v09L0mEfW0vkHRpzdf2AsmYHtNp2xvmrjOs5U91lQ6OU6xQO54yT24jbA21AyrjOMKTdjwlYscR/qBRKbFwHOEzWV1POh7AGZZzfZOsnlxbbcSafHGujD0lVnuurTaC0o8/zs1+0Y1zbrYJpOq6TyHnFOHKud36oMoAf5QMWCl3Sex23dutzRtFCCjH48Tu0b3d2sAkFb51HoimVKsOAIZHFOEIYLkeHdiE0AFNYXUBytObxHKEsFwL2mL4gIwWSiWGCMu1AG4TrVGzdC0mH4kXO4htVjLmENvV4SIHs10bQsqyuoAKC+bTh/JikDiBapvYIo1XhWb0M8j4FLcSVaYDHSo8yKcg69VYYhSMjAA3UVdljM2OqbzYoKxXop+4cICZZyUjhNmvwAFbpb6rKxkzcPqPK1yqMkIpGBkBqvisygKt+EXaa36Mrm/UlQy6PrKxR1vJwOccPNW8Aa/wM238ZA4S1KuyQ080ae2it3tB20Out7fzKCsZdHVss/JKVclYARWMjInAXbzPFKlgZByTa7huEqgKVMHIEJjN7rORuL2aSkYoshrPFJUMmYwqfEFnhvcZyyxVPfyiew+hbvOFXnkxlEkZ9XoypBQGPSVjjlYwMoZYtes+YuND7XSJ2BwnNGeXCA9SMpiWkiGXa8jkTmUE80WR/LeMYM5PNYz79s7/Q7Bug+6k30Wy9tZRMkSvqqJkiGpgAppeGVEdU0XJENWiBbT1ErL7CRo9GcKZVCCvZAjv68Xy5QX1YMjtzcL3mssEUoUFA+8XKCHdgo3u+Sgj3ucC7tspI96rROP+Inc9+X4zcP9cGbqeZM8guAeyhHyOId2TofCSI2gvchnuvxZtiqRa5iB2OYUeelklQ+McBPJcRxmNsywT0elbpYtH9DV8KmfKgGfkyqicC5wLTjUqb6ka8btO9p9PAhxlFYyEN2rIEEYwC56pvI1H8Jz8SiM+yWq0oxOgYNr9lF7xsy/JQC7AdvrMaB94xsE/ofZhYCCssml10ErAqYz+yzFw8PaBthdISM//0PYCyeP/ho8/Dnku1X6vApSHXw/TxzToP25Ow9LlX/ZdSQaCG2tatYVgiA9fH/6dT/ePHmGrNVbQaaRfeT9adHuSRI+cZBiGYTDLRRSfB9PfCe9he3uOoy8fZ8325bos/yIh312XPv03iBaIbxfmphvfuc9L7L2qXMLCPk2zH2BUyGB8+hRhr5heNemUmhWNXFRfKJZjnbq0ieI//NdrA+eyzZBedEz/8ucDYezPManeQu7na9AMxt2jwSmZi2eRX88pb9Rkp0t4NNX/pNA5N4Kp88IbKaibv9/Uf1Z7q487Ef4JeDyfunLxl9AA+rdRw61SdZuXiv/l0WcY0pft3wy8RgvGqDDwWM/zZE285IcMt9jVPaxfjLDtU4SFtshmvcPFM8wnn55SPjN3Vfr6jSb6kD6ReW0nmeTmZ23ecxkIH7eu38PPNybrdIwbDWYY/CXvj2QinPFa0eCdGWnafU6WmVGqVXrwmQkm3ccIgmGmMDY5hpHmMcHrNY33ZcFvZWv+DU3k90nRiC+jkIjzvjXrVX7OG9l784wStx+de2kqTc82N1Yif2onZnn9GX9zxmSdDeSN3Fmc6nTaX9vT22+3Flbj02A39aVsMgzDMAzDMAzDMAzDMAzDMAzDMAzDMAzDMIj/AJ4rQpnCPv5rAAAAAElFTkSuQmCC" alt="" class="product-cart__img">
+                                    </div>
+                                </div>
+
+                                <span class="sale__item">-39%</span>
+
+                                <div class="best-seller__item">
+                                    <span class="sale__content">Bát ăn cơm hình trụ Fresh Fruits 4.5inch</span>
+                                    
+                                    <div class="best-sller__evaluate">
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        
+                                    </div>
+
+                                    <span class="best-sller__much">
+                                        <span class="cart-price-vnd">₫</span>75,000 - 
+                                        <span class="cart-price-vnd">₫</span>175,000
+                                    </span>
+                                    
+                                </div>
+                                
+                            </a>
+                        </div>
+
+                        <div class="product-item col l-2-4 m-4 c-6">
+                            <a href="" class="best-seller__product-link" >
+                                <div class="best-seller__product-img">
+                                    <img src="https://holame.r.worldssl.net/wp-content/uploads/2021/06/bst-dua-vien-nau-20-600x600.jpg?v=1623055918" alt="">
+                                
+                                    <div class="best-seller__product-cart">
+                                        <img src="data:image/png;base64,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" alt="" class="product-cart__img">
+                                    </div>
+                                </div>
+
+                                <div class="best-seller__item-like">
+                                    <span class="sale__item">-30%</span>
+                                </div>
+
+                                <div class="best-seller__item">
+                                    <span class="sale__content">Bộ sưu tập bát đĩa sứ lẻ dứa viền nâu</span>
+                                    
+                                    <div class="best-sller__evaluate">
+                                        <!-- <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i> -->
+                                    </div>
+
+                                    <span class="best-sller__much">
+                                        <span class="cart-price-vnd">₫</span>15,000 - 
+                                        <span class="cart-price-vnd">₫</span>135,000
+                                    </span>
+                                    
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="product-item col l-2-4 m-4 c-6">
+                            <a href="" class="best-seller__product-link" >
+                                <div class="best-seller__product-img">
+                                    <img src="https://holame.r.worldssl.net/wp-content/uploads/2021/03/Khay-nuong-cherry-vien-phang-1-600x600.jpg?v=1619173225" alt="">
+                                
+                                    <div class="best-seller__product-cart">
+                                        <img src="data:image/png;base64,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" alt="" class="product-cart__img">
+                                    </div>
+                                </div>
+
+                                <div class="best-seller__item-like">
+                                    <span class="sale__item">-50%</span>
+                                </div>
+
+                                <div class="best-seller__item">
+                                    <span class="sale__content">Khay nướng cherry viền phẳng</span>
+                                    
+                                    <div class="best-sller__evaluate">
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                    </div>
+
+                                    <span class="best-sller__much">
+                                        <span class="cart-price-vnd">₫</span>18,000 - 
+                                        <span class="cart-price-vnd">₫</span>295,000
+                                    </span>
+                                    
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="product-item col l-2-4 m-4 c-6">
+                            <a href="" class="best-seller__product-link" >
+                                <div class="best-seller__product-img">
+                                    <img src="https://holame.r.worldssl.net/wp-content/uploads/2021/02/dia-su-ghep-hinh-hoa-tiet-trai-dua-5-600x600.jpg?v=1619173842" alt="">
+                                
+                                    <div class="best-seller__product-cart">
+                                        <img src="data:image/png;base64,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" alt="" class="product-cart__img">
+                                    </div>
+                                </div>
+
+                                <div class="best-seller__item-like">
+                                    <span class="sale__item">-39%</span>
+                                </div>
+
+                                <div class="best-seller__item">
+                                    <span class="sale__content">Bộ bát đĩa sứ lẻ họa tiết củ cải đỏ</span>
+                                    
+                                    <div class="best-sller__evaluate">
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                    </div>
+
+                                    <span class="best-sller__much">
+                                        <span class="cart-price-vnd">₫</span>18,000 - 
+                                        <span class="cart-price-vnd">₫</span>225,000
+                                    </span>
+                                    
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="product-item col l-2-4 m-4 c-6">
+                            <a href="" class="best-seller__product-link" >
+                                <div class="best-seller__product-img">
+                                    <img src="https://holame.r.worldssl.net/wp-content/uploads/2020/12/bat-dia-le-chanh-vang-la-xanh-16-600x600.jpg?v=1619175028" alt="">
+                                    
+                                    <div class="best-seller__product-cart">
+                                        <img src="data:image/png;base64,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" alt="" class="product-cart__img">
+                                    </div>
+                                </div>
+
+                                <span class="sale__item">-70%</span>
+
+                                <div class="best-seller__item">
+                                    <span class="sale__content">Bộ sưu tập bát đĩa sứ lẻ Chanh vàng lá xanh</span>
+                                    
+                                    <div class="best-sller__evaluate">
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                    </div>
+
+                                    <span class="best-sller__much">
+                                        <span class="cart-price-vnd">₫</span>45,000 - 
+                                        <span class="cart-price-vnd">₫</span>245,000
+                                    </span>
+                                    
+                                </div>
+                                
+                                
+                            
+                            </a>
+                        </div>
+
+                        <div class="product-item col l-2-4 m-4 c-6">
+                            <a href="" class="best-seller__product-link" >
+                                <div class="best-seller__product-img">
+                                    <img src="https://holame.r.worldssl.net/wp-content/uploads/2020/11/bo-suu-tap-bat-dia-khay-su-cherry-do-12-600x600.jpg?v=1619176043" alt="">
+                                
+                                    <div class="best-seller__product-cart">
+                                        <img src="data:image/png;base64,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" alt="" class="product-cart__img">
+                                    </div>
+                                </div>
+
+                                <span class="sale__item">-25%</span>
+
+                                <div class="best-seller__item">
+                                    <span class="sale__content">Bộ sưu tập bát đĩa khay sứ Cherry đỏ</span>
+                                    
+                                    <div class="best-sller__evaluate">
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        
+                                    </div>
+
+                                    <span class="best-sller__much">
+                                        <span class="cart-price-vnd">₫</span>75,000 - 
+                                        <span class="cart-price-vnd">₫</span>175,000
+                                    </span>
+                                    
+                                </div>
+                                
+                            </a>
+                        </div>
+
+                        <div class="product-item col l-2-4 m-4 c-6">
+                            <a href="" class="best-seller__product-link" >
+                                <div class="best-seller__product-img">
+                                    <img src="https://holame.r.worldssl.net/wp-content/uploads/2020/12/tho-su-nuong-tron-co-tay-cam-cherry-do-3-600x600.jpg?v=1619175266" alt="">
+                                
+                                    <div class="best-seller__product-cart">
+                                        <img src="data:image/png;base64,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" alt="" class="product-cart__img">
+                                    </div>
+                                </div>
+
+                                <div class="best-seller__item-like">
+                                    <span class="sale__item">-39%</span>
+                                </div>
+
+                                <div class="best-seller__item">
+                                    <span class="sale__content">Thố sứ nướng tròn có tay cầm Cherry đỏ</span>
+                                    
+                                    <div class="best-sller__evaluate">
+                                        <!-- <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i> -->
+                                    </div>
+
+                                    <span class="best-sller__much">
+                                        <span class="cart-price-vnd">₫</span>15,000 - 
+                                        <span class="cart-price-vnd">₫</span>135,000
+                                    </span>
+                                    
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="product-item col l-2-4 m-4 c-6">
+                            <a href="" class="best-seller__product-link" >
+                                <div class="best-seller__product-img">
+                                    <img src="https://holame.r.worldssl.net/wp-content/uploads/2020/12/bat-dia-coc-su-le-chanh-vang-22-600x600.jpg?v=1619174767" alt="">
+                                
+                                    <div class="best-seller__product-cart">
+                                        <img src="data:image/png;base64,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" alt="" class="product-cart__img">
+                                    </div>
+                                </div>
+
+                                <div class="best-seller__item-like">
+                                    <span class="sale__item">-35%</span>
+                                </div>
+
+                                <div class="best-seller__item">
+                                    <span class="sale__content">Bộ sưu tập bát đĩa cốc sứ lẻ chanh vàng</span>
+                                    
+                                    <div class="best-sller__evaluate">
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                    </div>
+
+                                    <span class="best-sller__much">
+                                        <span class="cart-price-vnd">₫</span>18,000 - 
+                                        <span class="cart-price-vnd">₫</span>295,000
+                                    </span>
+                                    
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="product-item col l-2-4 m-4 c-6">
+                            <a href="" class="best-seller__product-link" >
+                                <div class="best-seller__product-img">
+                                    <img src="https://holame.r.worldssl.net/wp-content/uploads/2021/02/dia-su-ghep-hinh-hoa-tiet-trai-dua-5-600x600.jpg?v=1619173842" alt="">
+                                
+                                    <div class="best-seller__product-cart">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEX///8AAAC9vb3u7u5xcXFRUVFtbW1JSUl9fX0xMTH7+/vPz8+kpKT39/e3t7dkZGTp6enDw8OWlpbg4ODV1dVcXFwaGhrc3Nyvr68QEBA6Ojp/f3+JiYmdnZ01NTXHx8ciIiJBQUGHh4cLCwtNTU1gYGAqKioYGBiQkJBcQVxfAAAFsklEQVR4nO2da3eqSgyGxVsVL6iVatVatdXd//8LzyYBt0DtATpvMsuV51O/NCTIzCTvZKDVMgzDMAzDMAzDMAzDMAzDMAzDMAzDMAzDMCQYbQffsn3X9swR0+AuY23f3HC4H+GLtm9uuB9gEMy0nXPC4ocI29rOuWG8GX4DRfil7RuSXhLhp7YXSHZJhK8TbTeAtOkxfdZ2A8iMIlxru4HkNYlwq+0FkiiJcK/tBRJeJzvabgB5pwiX2m4AmTxS8v09L0mEfW0vkHRpzdf2AsmYHtNp2xvmrjOs5U91lQ6OU6xQO54yT24jbA21AyrjOMKTdjwlYscR/qBRKbFwHOEzWV1POh7AGZZzfZOsnlxbbcSafHGujD0lVnuurTaC0o8/zs1+0Y1zbrYJpOq6TyHnFOHKud36oMoAf5QMWCl3Sex23dutzRtFCCjH48Tu0b3d2sAkFb51HoimVKsOAIZHFOEIYLkeHdiE0AFNYXUBytObxHKEsFwL2mL4gIwWSiWGCMu1AG4TrVGzdC0mH4kXO4htVjLmENvV4SIHs10bQsqyuoAKC+bTh/JikDiBapvYIo1XhWb0M8j4FLcSVaYDHSo8yKcg69VYYhSMjAA3UVdljM2OqbzYoKxXop+4cICZZyUjhNmvwAFbpb6rKxkzcPqPK1yqMkIpGBkBqvisygKt+EXaa36Mrm/UlQy6PrKxR1vJwOccPNW8Aa/wM238ZA4S1KuyQ080ae2it3tB20Out7fzKCsZdHVss/JKVclYARWMjInAXbzPFKlgZByTa7huEqgKVMHIEJjN7rORuL2aSkYoshrPFJUMmYwqfEFnhvcZyyxVPfyiew+hbvOFXnkxlEkZ9XoypBQGPSVjjlYwMoZYtes+YuND7XSJ2BwnNGeXCA9SMpiWkiGXa8jkTmUE80WR/LeMYM5PNYz79s7/Q7Bug+6k30Wy9tZRMkSvqqJkiGpgAppeGVEdU0XJENWiBbT1ErL7CRo9GcKZVCCvZAjv68Xy5QX1YMjtzcL3mssEUoUFA+8XKCHdgo3u+Sgj3ucC7tspI96rROP+Inc9+X4zcP9cGbqeZM8guAeyhHyOId2TofCSI2gvchnuvxZtiqRa5iB2OYUeelklQ+McBPJcRxmNsywT0elbpYtH9DV8KmfKgGfkyqicC5wLTjUqb6ka8btO9p9PAhxlFYyEN2rIEEYwC56pvI1H8Jz8SiM+yWq0oxOgYNr9lF7xsy/JQC7AdvrMaB94xsE/ofZhYCCssml10ErAqYz+yzFw8PaBthdISM//0PYCyeP/ho8/Dnku1X6vApSHXw/TxzToP25Ow9LlX/ZdSQaCG2tatYVgiA9fH/6dT/ePHmGrNVbQaaRfeT9adHuSRI+cZBiGYTDLRRSfB9PfCe9he3uOoy8fZ8325bos/yIh312XPv03iBaIbxfmphvfuc9L7L2qXMLCPk2zH2BUyGB8+hRhr5heNemUmhWNXFRfKJZjnbq0ieI//NdrA+eyzZBedEz/8ucDYezPManeQu7na9AMxt2jwSmZi2eRX88pb9Rkp0t4NNX/pNA5N4Kp88IbKaibv9/Uf1Z7q487Ef4JeDyfunLxl9AA+rdRw61SdZuXiv/l0WcY0pft3wy8RgvGqDDwWM/zZE285IcMt9jVPaxfjLDtU4SFtshmvcPFM8wnn55SPjN3Vfr6jSb6kD6ReW0nmeTmZ23ecxkIH7eu38PPNybrdIwbDWYY/CXvj2QinPFa0eCdGWnafU6WmVGqVXrwmQkm3ccIgmGmMDY5hpHmMcHrNY33ZcFvZWv+DU3k90nRiC+jkIjzvjXrVX7OG9l784wStx+de2kqTc82N1Yif2onZnn9GX9zxmSdDeSN3Fmc6nTaX9vT22+3Flbj02A39aVsMgzDMAzDMAzDMAzDMAzDMAzDMAzDMAzDMIj/AJ4rQpnCPv5rAAAAAElFTkSuQmCC" alt="" class="product-cart__img">
+                                    </div>
+                                </div>
+
+                                <div class="best-seller__item-like">
+                                    <span class="sale__item">-41%</span>
+                                </div>
+
+                                <div class="best-seller__item">
+                                    <span class="sale__content">Bộ bát đĩa sứ lẻ họa tiết củ cải đỏ</span>
+                                    
+                                    <div class="best-sller__evaluate">
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                    </div>
+
+                                    <span class="best-sller__much">
+                                        <span class="cart-price-vnd">₫</span>18,000 - 
+                                        <span class="cart-price-vnd">₫</span>225,000
+                                    </span>
+                                    
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="Product-sale__view">
+                        <span class="Product-sale__view-text">Xem toàn bộ sản phẩm sale</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sumenh-halome">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="sumenh-halome__header">
+                            <span class="menu-product__item sumenh-halome__text">Our Vision</span>
+        
+                            <h2 class="menu-product__heding sumenh-halome__heding">SỨ MỆNH CỦA HOLAME</h2>
+        
+                            <span class="sumenh-halome__content">Sứ mệnh của Holame Store là đem đến cho người tiêu dùng Việt những sản phẩm gốm sứ, gia dụng chất lượng cao với giá thành tốt nhất thông qua trải nghiệm mua hàng đơn giản, nhanh chóng và minh bạch. Từ đó lan tỏa niềm đam mê nấu nướng, trang trí nhà cửa ...</span>
+        
+                        </div>
+        
+                        <div class="sumenh-halome__content">
+                            <div class="sumenh-halome__content-container">
+                                <div class="sumenh-halome__content-item l-6 m-6 c-12">
+                                    <img src="https://holame.r.worldssl.net/wp-content/uploads/2021/06/2.png" alt="" class="sumenh-halome__content-item-img">
+                                </div>
+            
+                                <div class="sumenh-halome__content-item2 l-6 m-6 c-12">
+                                    <img src="https://holame.r.worldssl.net/wp-content/uploads/2021/06/1.png" alt="" class="sumenh-halome__content-item-img">
+                                </div>
+                                
+                            </div>
+
+                            
+                            <div class="sumenh__arrow l-0 m-0">
+                                <div class="sumenh__arrow-left">
+                                <i class="sumenh__arrow-left-icon fas fa-chevron-left"></i>
+                                </div>
+
+                                 <div class="sumenh__arrow-right">
+                                    <i class="sumenh__arrow-right-icon fas fa-chevron-right"></i>
+                                </div>
+                            </div>
+
+
+                            <div class="owl-dots sumenh-dots l-0 m-0">
+                                <div class="owl-dots ">
+                                    <span id="owl-dots_1" class="bestsell-active"></span>
+                                </div>
+                                <div class="owl-dots">
+                                    <span id="owl-dots_2"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+
+                </div>
+            </div>
+
+            <div class="feedback-halome">
+
+                <div class="grid wide">
+                    <div class="feedback-halome__header">
+                        <h2 class="menu-product__heding feedback-halome__heding">#FEEDBACK TỪ TRÁI TIM</h2>
+                    </div>
+                </div>
+
+                <div class="feedback__content ">
+                    <div class="grid wide">
+                        <div class="row">
+                            <div class="feedback__content-list">
+                                <div class="feedback__content-img l-6 m-12 c-12">
+                                    <img src="https://holame.net/wp-content/uploads/2021/04/customer-reviews.png">
+                                </div>
+            
+                                <div class="feedback__content-customer">
+                                    <div class="feedback__content-member-list">
+                                        <div class="feedback__content-member-container" >
+            
+                                            <div id="feedback__member" class="feedback__content-member" style="transform: translateX(0);">
+                                                <div class="feedback__member-avatar">
+                                                    <img src="https://holame.net/wp-content/uploads/2021/04/120926722_737463583503557_2163216495450549032_n-min-100x100.jpeg" alt="">
+                                                </div>
+                    
+                                                <div class="feedback__member-item">
+                                                    <div class="feedback__member-evaluate">
+                                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                    </div>
+                    
+                                                    <span class="feedback__member-rating">
+                                                        Mình mua rất nhiều đồ của Holame Store và vô cùng hài lòng về sản phẩm cùng với sự hỗ trợ nhiệt tình của các bạn CSKH.						
+                                                    </span>
+                                                    <footer class="feedback__member-footer">
+                                                        <span class="feedback__member-name"> Bạch Dương </span>- Hà Nội
+                                                    </footer>
+                                                </div>
+                                            </div>
+                                            
+                    
+                                            <div id="feedback__member2" class="feedback__content-member feedback__content-member2">
+                                                <div class="feedback__member-avatar">
+                                                    <img src="https://holame.net/wp-content/uploads/2021/04/174784083_100472772191207_9200530345014015138_n-100x100.jpeg" alt="">
+                                                </div>
+                    
+                                                <div class="feedback__member-item">
+                                                    <div class="feedback__member-evaluate">
+                                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                        <i class="best-seller-item__star-gold fas fa-star"></i>
+                                                    </div>
+                    
+                                                    <span class="feedback__member-rating">
+                                                        Sản phẩm phải nói là đẹp hơn cả ảnh quảng cáo đó nhen, đóng gói vô cùng cẩn thận, lại còn thường xuyên có chương trình ưu đãi cho đứa cuồng gốm sứ như mình nữa ^^												
+                                                    </span>
+                                                    <footer class="feedback__member-footer">
+                                                        <span class="feedback__member-name"> Hoàng Lan Hương </span>- HCM
+                                                    </footer>
+                                                </div>
+                                            </div>
+            
+                                        </div>
+                                            
+                                    </div>
+                
+            
+                                    <div class="feedback__arrow">
+                                        <div class="feedback__arrow-left">
+                                            <i class="feedback__arrow-left-icon fas fa-chevron-left"></i>
+                                        </div>
+            
+                                            <div class="feedback__arrow-right">
+                                            <i class="feedback__arrow-right-icon fas fa-chevron-right"></i>
+                                            </div>
+                                    </div>
+            
+            
+                                        <div class="feedback-dots">
+                                            <div class="owl-dots ">
+                                                <span id="owl-dots_1" class="owl-dot1 activedot"></span>
+                                            </div>
+                                            <div class="owl-dots">
+                                                <span id="owl-dots_2"  class="owl-dot2"></span>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            
+            </div>
+
+            <div class="question-frequent">
+                <div class="grid wide">
+                    <div class="question-frequent__header">
+                        <h2 class="menu-product__heding question-frequent__heding">CÂU HỎI THƯỜNG GẶP</h2>
+                    </div>
+
+                    <div class="question-content">
+                        <div class="question-content__list">
+                            <div class="question-content__item">
+                                <div class="icon">
+                                    <i class=" fas fa-minus active"></i>
+                                    <i class="icon-ques fas fa-plus"></i>
+                                </div>
+                                
+                                <h4>1. Đơn hàng bao nhiêu tiền thì FREESHIP (miễn phí vận chuyển)?</h4>
+                            </div>
+                            <div class="ques-container height" loading="lazy">
+                                <div class=" question-content__item-child">
+                                    <span>
+                                        Holame Store áp dụng chính sách miễn phí vận chuyển toàn quốc với mọi hình thức thanh toán cho đơn hàng từ 500K (năm trăm ngàn đồng).
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="question-content__list">
+                            <div class="question-content__item">
+                                <div class="icon">
+                                    <i class=" fas fa-minus"></i>
+                                    <i class="icon-ques fas fa-plus active"></i>
+                                </div>
+                                
+                                <h4>2. Vậy đơn hàng dưới 500K thì phí ship là bao nhiêu?</h4>
+                            </div>
+
+                            <div class="ques-container" loading="lazy">
+                                <div class=" question-content__item-child">
+                                    <span>
+                                        Với các đơn hàng dưới 500K, Holame Store thu phí giao hàng đồng giá 30K toàn quốc.
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="question-content__list">
+                            <div class="question-content__item">
+                                <div class="icon">
+                                    <i class=" fas fa-minus"></i>
+                                    <i class="icon-ques fas fa-plus active"></i>
+                                </div>
+                                <h4>3. Hình thức thanh toán của bên bạn là gì?</h4>
+                            </div>
+
+                            <div class="ques-container" loading="lazy">
+                                <div class=" question-content__item-child">
+                                    <span>
+                                        Với các đơn hàng dưới 500K, Holame Store thu phí giao hàng đồng giá 30K toàn quốc.
+                                        <ul>
+                                            <li>Thanh toán COD: thanh toán tại chỗ khi nhận hàng</li>
+                                            <li>Thanh toán chuyển khoản qua ngân hàng</li>
+                                            <li>Thanh toán online qua thẻ ATM với Napas</li>
+                                        </ul>
+                                    </span>
+                                
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="question-content__list">
+                            <div class="question-content__item">
+                                <div class="icon">
+                                    <i class=" fas fa-minus"></i>
+                                    <i class="icon-ques fas fa-plus active"></i>
+                                </div>
+                                <h4>4. Thời gian giao hàng là bao lâu?</h4>
+                            </div>
+
+                            <div class="ques-container" loading="lazy">
+                                <div class=" question-content__item-child">
+                                    <span>
+                                        <ul>
+                                            <li>Khu vực nội thành Hà Nội và các tỉnh lân cận: Từ 1 – 2 ngày</li>
+                                            <li>Khu vực khác trên cả nước: 3 – 5 ngày</li>
+                                        </ul>
+                                    </span>
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="question-content__list">
+                            <div class="question-content__item">
+                                <div class="icon">
+                                    <i class=" fas fa-minus"></i>
+                                    <i class="icon-ques fas fa-plus active"></i>
+                                </div>
+                                <h4>5. Chính sách đổi trả của bên bạn thế nào?</h4>
+                            </div>
+
+                            <div class="ques-container" loading="lazy">
+                                <div class=" question-content__item-child">
+                                    <span>
+                                        Holame Store <strong>chịu 100% phí ship đổi trả</strong> trong trường hợp sản phẩm nhận về sai mẫu, sai màu sắc, kích thước, dung tích …. so với quảng cáo, bill chốt đơn hoặc rơi vỡ, biến dạng do quá trình vận chuyển.
+                                    </span>
+                                </div>
+                            </div>
+
+                            </div>
+
+                        <div class="question-content__list">
+                            <div class="question-content__item">
+                                <div class="icon">
+                                    <i class=" fas fa-minus"></i>
+                                    <i class="icon-ques fas fa-plus active"></i>
+                                </div>
+                                <h4>6. Chính sách bảo hành đồ điện tử ra sao?</h4>
+                            </div>
+
+                            <div class="ques-container" loading="lazy">
+                                <div class=" question-content__item-child">
+                                    <span>
+                                        Chính sách bảo hành đồ gia dụng điện với lỗi đến từ nhà sản xuất bên mình là trong 12 tháng (1 đổi 1 trong vòng 1 tháng đầu & 12 tháng bảo hành sửa chữa/thay thế)
+            
+                                        <p><i>Chi tiết:</i> Chính sách bảo hành đồ điện</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="end_Container">
+                <div class="grid wide text-align">
+                    <div class="title_header">
+                        <span class="title-content">Ưu đãi đang diễn ra</span>
+                    </div>
+                    <div class="line-container">
+                        <h4>GIẢI PHÓNG GỐM SỨ CHO ĐỠ CHẬT KHO. GIẢM NGAY 10% TOÀN BỘ ĐƠN HÀNG TỪ 1 TRIỆU.</h4>
+                        <span class="line-container_item">
+                            Áp dụng giảm giá tại bước xác nhận đơn hàng.
+                        </span>
+                    </div>
+                    <div class="countdown-timer">
+                        <div class="countdown-timer_item">
+                            <span id="days">Days</span>
+                            <p>Ngày</p>
+                        </div>
+                        <div class="countdown-timer_item">
+                            <span id="hours">Hours</span>
+                            <p>Giờ</p>
+                        </div>
+                        <div class="countdown-timer_item">
+                            <span id="minutes">Minutes</span>
+                            <p>Phút</p>
+                        </div>
+                        <div class="countdown-timer_item">
+                            <span id="seconds">Seconds</span>
+                            <p>Giây</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-container">
+                <div class="grid wide">
+                    <span>Hiểu được những băn khoăn, trở ngại của khách hàng khi mua đồ gốm sứ: sợ không giống hình, sợ hỏng vỡ.</span>
+                    <span>Holame Store không ngừng trau dồi, đào tạo đội ngũ gói hàng chuyên nghiệp, đóng hàng nhiều lớp, đầu tư vật liệu chống tốt nhất cũng như đưa ra chính sách kiểm hàng thoải mái khi nhận rồi mới thanh toán, miễn phí đổi trả hàng sai mẫu - vỡ hỏng khi vận chuyển.</span>
+                    <span>Với Holame Store, sản phẩm chất lượng thôi là chưa đủ, khách hàng xứng đáng được nhận về nhiều hơn thế.</span>
+                </div>
+            </div>
+
+            <div class="halome-footer">
+                <div class="grid wide footer">
+                    <div class="row">
+                        <div class="l-3 m-6 c-12 footer-colum footer-colum-1 ">
+                            <div class="footer-colum_logo">
+                                <img src="https://holame.r.worldssl.net/wp-content/uploads/2021/01/logo-holame-store-footer.png" alt="">
+                            </div>
+                            <div class="footer-colum_content">
+                                <p>Sứ mệnh của Holame Store là đem đến cho người tiêu dùng Việt những sản phẩm gốm sứ, gia dụng chất lượng cao với giá thành tốt nhất thông qua trải nghiệm mua hàng minh bạch, đơn giản và nhanh chóng.</p>
+                                <div class="footer-colum-1_icon">
+                                    <a href="" class="icon-mxh">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="" class="icon-mxh">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="" class="icon-mxh">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </div>
+                                <span>
+                                    <a href="">Giới thiệu</a>  | 
+                                    <a href="">Liên hệ</a>  | 
+                                    <a href="">Đối tác</a>
+        
+                                </span>
+                            </div>
+                        </div>
+        
+                        <div class="l-3 m-6 c-12 footer-colum footer-colum-2">
+                            <div class="footer-colum_header">
+                                <h5>THÔNG TIN LIÊN HỆ</h5>  
+                                <div class="icon-footer">
+                                    <i id="icon1" class="footer-icon_down fas fa-chevron-down l-0 m-0"></i>
+                                </div>
+                            
+                            </div>
+                            <div id="footer-content1" class="footer-colum_content footer-colum_content-hidden">
+                                <ul>
+                                    <li><strong>Hotline:</strong> 096 441 15 82</li>
+                                    <li><strong>Email:</strong>  holame.cskh@gmail.com</li>
+                                    <li><strong>Thời gian làm việc:</strong>  07h30 – 19h00, T2 – CN</li>
+                                    <li><strong>Văn phòng:</strong>  107 Nguyễn Phong Sắc, Cầu Giấy, Hà Nội</li>
+                                    <li><strong>Kho hàng:</strong> Đông Anh, Hà Nội</li>
+                                </ul>
+                            </div>
+                        </div>
+        
+                        <div class="l-3 m-6 c-12 footer-colum footer-colum-3">
+                            <div class="footer-colum_header">
+                                <h5>Hỗ trợ khách hàng</h5>  
+                                <div class="icon-footer">
+                                    <i id="icon2" class="footer-icon_down fas fa-chevron-down l-0 m-0"></i>
+                                </div>
+                            </div>
+                            <div id="footer-content2" class="footer-colum_content footer-colum_content-hidden">
+                                <ul>
+                                    <li>
+                                        <a href="">Câu hỏi thường gặp</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Hướng dẫn đặt hàng</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Hình thức thanh toán</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Chính sách vận chuyển</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Chính sách đổi trả</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Chính sách bảo hành đồ điện</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Bảo mật thông tin khách hàng</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+        
+                        <div class="l-3 m-6 c-12 footer-colum footer-colum-4">
+                            <div class="footer-colum_header">
+                                <h5>Hình thức thanh toán</h5> 
+                                <div class="icon-footer">
+                                    <i id="icon3" class="footer-icon_down fas fa-chevron-down l-0 m-0"></i>
+                                </div>
+                            </div>
+                            <div id="footer-content3" class="footer-colum_content footer-colum_content-hidden">
+                                <img src="https://holame.net/wp-content/uploads/2021/02/hinh-thuc-thanh-toan.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="copyright-footer">
+                    <div class="grid wide copyright-container">
+                        <span class="copyright-header">
+                            <strong>CHỨNG NHẬN:</strong>
+                        </span>
+                        <span class="copyright-img">
+                            <img src="https://holame.r.worldssl.net/wp-content/uploads/2021/02/logoSaleNoti.png" alt="">
+                        </span>
+                        <span class="copyright-cotent">
+                            <span>Công ty TNHH Seni World. GPDKKD: 0107907231 do Sở Kế Hoạch và Đầu Tư TP Hà Nội cấp ngày 06/07/2017.</span>
+                            <span>Holame Store chịu 100% phí ship đổi trả trong trường hợp sản phẩm nhận về sai mẫu, sai màu sắc, kích thước, dung tích …. so với quảng cáo, bill chốt đơn hoặc rơi vỡ, biến dạng do quá trình vận chuyển.</span>
+                            <span>
+                                <i class="far fa-copyright"></i> 
+                                2021 Holame Store. All Rights Reserved.</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <script src="./assets/css/myjs.js"></script>
+        </div>
+    </div>
+</body>
+</html>
